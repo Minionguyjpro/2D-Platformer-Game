@@ -1,5 +1,3 @@
-package com.minionguyjpro;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -51,6 +49,10 @@ public class PlatformerGame extends JFrame {
         // Clear the screen
         g2d.setColor(Color.BLACK);
         g2d.fillRect(0, 0, WIDTH, HEIGHT);
+
+        // Draw the platform
+        g2d.setColor(Color.GREEN);
+        g2d.fillRect(100, HEIGHT - 50, 200, 20);
 
         // Draw the player
         g2d.setColor(Color.RED);
